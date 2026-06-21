@@ -34,8 +34,7 @@ body{
     
     backdrop-filter: blur(10px);
 
-    transform: translateY(-80
-    px);
+    transform: translateY(-200px);
     text-align: center;
     padding: 40px;
     width: 90%;
