@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #ff9a9e,
+        #fad0c4,
+        #a18cd1
+    );
+}
+
+.caixa{
+    text-align: center;
+    padding: 40px;
+    width: 90%;
+    max-width: 600px;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 15px;
+  
+}
+
+h1{
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 1px; /* letra menor */
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1);
+}
+
+.formulario{
+    background: #4CAF50;
+    color: white;
+}
+
+.surpresa{
+  font-size: 1.2rem;
+    background: #2196F3;
+    color: white;
+}

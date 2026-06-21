@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pergunta</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+button{
+    padding: 10px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#sim{
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+#nao{
+    background: #f44336;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+}
+</style>
+</head>
+<body>
+    
+   <div class="caixa">
+    <h2>Olá! Seu amigo estudante de programação fez uma coisinha para você ❤️</h2>
+    <h1> quer sair para agente conversar tomar sorvete jogar warzone no Pc te fazer ir</h1>
+
+    <div class="botoes">
+        <button id="sim">Sim</button>
+        <button id="nao">Não</button>
+    </div>
+</div>
+
+<script>
+    
+    
+document.getElementById("sim").addEventListener("click", () => {
+    window.location.href = "escolha.html";
+});
+
+    
+    
+const nao = document.getElementById("nao");
+
+function fugir() {
+    const x = Math.random() * (window.innerWidth - nao.offsetWidth);
+    const y = Math.random() * (window.innerHeight - nao.offsetHeight);
+
+    nao.style.position = "fixed";
+    nao.style.left = `${x}px`;
+    nao.style.top = `${y}px`;
+}
+
+nao.addEventListener("mouseenter", fugir);
+nao.addEventListener("click", fugir);
+</script>
+
+</body>
+</html>
